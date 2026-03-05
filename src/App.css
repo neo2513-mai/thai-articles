@@ -1,0 +1,126 @@
+
+
+body {
+  margin: 0; /* กำจัดขอบขาวรอบนอกที่ติดมากับ Browser */
+}
+
+
+/* เลย์เอาต์หลัก */
+.container {
+  min-height: 100vh; /* ความสูงขั้นต่ำเท่ากับ 100% ของความสูงหน้าจอ */
+  width: 100%;
+  padding: 5px;
+  background-color: #f4f4f4;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  align-items: stretch;
+}
+
+.col {
+  flex: 1; /* แบ่งให้เท่ากัน 4 คอลัมน์ */
+  color: red;
+  background: white;
+  padding: 0px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* คอลัมน์ที่ต้องการให้ใหญ่กว่า (2 และ 3) */
+.col-large {
+  color: blue;
+  padding: 10px;
+  flex: 2; /* จะใหญ่เป็น 2 เท่าของ .col ปกติ */
+}
+
+/* ตกแต่งการ์ดบทความ */
+.article-card img {
+  width: 90%;
+  height: 70%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+/* คุมขนาดรูปใน App.css */
+.ads-card img {
+  width: 80%;
+  height: 40%;
+   cursor: pointer;
+  object-fit: contain; /* รูปไม่เบี้ยวแน่นอน */
+}
+
+
+
+button {
+  background-color: #67bce9;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #e5d38b;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  font-size: 20px;
+  background: white;
+  padding: 10px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  position: relative;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.mini-thumb {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* บนมือถือให้เรียงต่อกันเป็นแถวเดียว */
+  }
+}
+
+.order-buttons {
+  display: flex;
+  justify-content: space-between; /* กระจายปุ่มให้เต็มพื้นที่ที่มี */
+  align-items: center; /* จัดให้ปุ่มอยู่ตรงกลางในแนวตั้ง */
+}
+.full-img{
+  margin: 0;
+}
+

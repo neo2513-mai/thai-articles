@@ -1,0 +1,35 @@
+/* src/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8f0f8; /* สีพื้นหลัง */
+  color: white; /* สีตัวอักษร */
+  position: sticky; /* ตรึงไว้ด้านบน */
+  top: 0;
+  width: 100%; /* ให้ยาวเต็มจอ */
+  z-index: 1000; /* ให้อยู่ชั้นบนสุด */
+  box-sizing: border-box; /* สำคัญ: ไม่ให้ padding ทำให้นูนเกินจอ */
+}
+
+.nav-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(18, 40, 210);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+    
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(227, 22, 224);
+} 
