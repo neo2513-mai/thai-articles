@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react';
+// ประกาศตัวแปร URL ไว้ตรงนี้ (นอก App component)
+const ARTICLE_URL = import.meta.env.VITE_ARTICLE_API_URL;
+const PRODUCT_URL = import.meta.env.VITE_PRODUCT_API_URL;
+
 import Navbar from './Navbar'; // 1. Import Component เข้ามา
 import './App.css';
 
